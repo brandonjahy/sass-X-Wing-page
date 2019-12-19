@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:200,300,400,600,700&display=swap');
 $smallfont: #FFD700;
+$fontfam: 'Barlow', sans-serif;
 
 
 
@@ -9,12 +10,49 @@ $smallfont: #FFD700;
 
 body {
     background: #4b5159;
+    position: relative;
+    #rectangle {
+        top: 50%;
+        left: -10%;
+        width: 150%;
+        height: 100px;
+        transform: rotate(345deg);
+        background: #111;
+        position: absolute;
+      }
+      #rectangle2 {
+        top: 75%;
+        left: -10%;
+        width: 150%;
+        height: 100px;
+        transform: rotate(345deg);
+        background: #111;
+        position: absolute;
+      }
 }
 
 header {
     height: 100vh;
     width: 100%;
     position: relative;
+    .x-wing {
+        position: absolute;
+        top: 30%;
+        left: 60%;
+        img {
+            height: 350px;
+            width: 350px;
+        }
+    }
+    .x-wing2 {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        img {
+            height: 450px;
+            width: 450px;
+        }
+    }
     .navbar {
         height: 5%;
         width: 90%;
@@ -36,6 +74,28 @@ header {
                 text-shadow: -1px 4px 3px #000;
                 transform: scale(1.5);
             }
+        }
+    }
+    .text-block {
+        height: 30%;
+        width: 40%;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        h1 {
+            font-size: 4.2rem;
+            color: $smallfont;
+            font-family: $fontfam;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            padding-bottom: 30px;
+        }
+        p {
+            font-size: 2rem;
+            font-family: $fontfam;
+            text-align: center;
+            color: $smallfont;
         }
     }
 }

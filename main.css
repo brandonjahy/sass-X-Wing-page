@@ -6,12 +6,57 @@
 
 body {
   background: #4b5159;
+  position: relative;
+}
+
+body #rectangle {
+  top: 50%;
+  left: -10%;
+  width: 150%;
+  height: 100px;
+  -webkit-transform: rotate(345deg);
+          transform: rotate(345deg);
+  background: #111;
+  position: absolute;
+}
+
+body #rectangle2 {
+  top: 75%;
+  left: -10%;
+  width: 150%;
+  height: 100px;
+  -webkit-transform: rotate(345deg);
+          transform: rotate(345deg);
+  background: #111;
+  position: absolute;
 }
 
 header {
   height: 100vh;
   width: 100%;
   position: relative;
+}
+
+header .x-wing {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+
+header .x-wing img {
+  height: 350px;
+  width: 350px;
+}
+
+header .x-wing2 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+header .x-wing2 img {
+  height: 450px;
+  width: 450px;
 }
 
 header .navbar {
@@ -40,5 +85,30 @@ header .navbar a:hover {
   text-shadow: -1px 4px 3px #000;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+header .text-block {
+  height: 30%;
+  width: 40%;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+header .text-block h1 {
+  font-size: 4.2rem;
+  color: #FFD700;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+header .text-block p {
+  font-size: 2rem;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  color: #FFD700;
 }
 /*# sourceMappingURL=main.css.map */
